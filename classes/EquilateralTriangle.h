@@ -3,11 +3,13 @@
 #include "IsoscelesTriangle.h"
 
 
-class EquilateralTriangle : public IsoscelesTriangle {
-public:
-	EquilateralTriangle(const int lengthABC);
+namespace FigureLibrary {
+	class EquilateralTriangle : public IsoscelesTriangle {
+	public:
+		EquilateralTriangle(const int lengthABC);
 
-	std::string getName() override;
+		std::string getName() override;
 
-	bool getCorrect() override;
-};
+		bool getCorrect() override;
+	};
+}

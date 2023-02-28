@@ -3,11 +3,13 @@
 #include "Parallelogram.h"
 
 
-class Rhombus : public Parallelogram {
-public:
-	Rhombus(const int lengthABCD, const int angleAC, const int angleBD);
+namespace FigureLibrary {
+	class Rhombus : public Parallelogram {
+	public:
+		Rhombus(const int lengthABCD, const int angleAC, const int angleBD);
 
-	std::string getName() override;
+		std::string getName() override;
 
-	bool getCorrect() override;
-};
+		bool getCorrect() override;
+	};
+}

@@ -5,25 +5,27 @@
 #include <string>
 
 
-class Figure {
-public:
-	Figure();
+namespace FigureLibrary {
+	class Figure {
+	public:
+		Figure();
 
-	virtual std::string getName();
+		virtual std::string getName();
 
-	int getSides();
+		int getSides();
 
-	virtual std::string getAllLengths();
+		virtual std::string getAllLengths();
 
-	virtual std::string getAllAngles();
+		virtual std::string getAllAngles();
 
-	virtual bool getCorrect();
+		virtual bool getCorrect();
 
-	virtual std::string getInfo();
+		virtual std::string getInfo();
 
-protected:
-	Figure(const int _sides) { sides = _sides; }
+	protected:
+		Figure(const int _sides) { sides = _sides; }
 
-private:
-	int sides;
-};
+	private:
+		int sides;
+	};
+}

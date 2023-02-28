@@ -3,28 +3,30 @@
 #include "Figure.h"
 
 
-class Triangle : public Figure {
-public:
-	Triangle(const int lengthA, const int lengthB, const int lengthC, const int angleA, const int angleB, const int angleC);
+namespace FigureLibrary {
+	class Triangle : public Figure {
+	public:
+		Triangle(const int lengthA, const int lengthB, const int lengthC, const int angleA, const int angleB, const int angleC);
 
-	std::string getName() override;
+		std::string getName() override;
 
-	int getLengthA();
-	int getLengthB();
-	int getLengthC();
-	int getAngleA();
-	int getAngleB();
-	int getAngleC();
+		int getLengthA();
+		int getLengthB();
+		int getLengthC();
+		int getAngleA();
+		int getAngleB();
+		int getAngleC();
 
-	std::string getAllLengths() override;
+		std::string getAllLengths() override;
 
-	std::string getAllAngles() override;
+		std::string getAllAngles() override;
 
-	bool getCorrect() override;
+		bool getCorrect() override;
 
-	std::string getInfo() override;
+		std::string getInfo() override;
 
-private:
-	int a, b, c;
-	int A, B, C;
-};
+	private:
+		int a, b, c;
+		int A, B, C;
+	};
+}

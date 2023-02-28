@@ -3,11 +3,13 @@
 #include "Rhombus.h"
 
 
-class Square : public Rhombus {
-public:
-	Square(const int lengthABCD);
+namespace FigureLibrary {
+	class Square : public Rhombus {
+	public:
+		Square(const int lengthABCD);
 
-	std::string getName() override;
+		std::string getName() override;
 
-	bool getCorrect() override;
-};
+		bool getCorrect() override;
+	};
+}

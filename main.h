@@ -14,6 +14,6 @@
 #include <iostream>
 
 
-void printInfo(Figure* figure);
+void printInfo(FigureLibrary::Figure* figure);
 
-void deleteFigure(Figure* figure);
+void deleteFigure(FigureLibrary::Figure* figure);

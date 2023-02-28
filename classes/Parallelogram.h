@@ -3,11 +3,13 @@
 #include "Quadrilateral.h"
 
 
-class Parallelogram : public Quadrilateral {
-public:
-	Parallelogram(const int lengthAC, const int lengthBD, const int angleAC, const int angleBD);
+namespace FigureLibrary {
+	class Parallelogram : public Quadrilateral {
+	public:
+		Parallelogram(const int lengthAC, const int lengthBD, const int angleAC, const int angleBD);
 
-	std::string getName() override;
+		std::string getName() override;
 
-	bool getCorrect() override;
-};
+		bool getCorrect() override;
+	};
+}
